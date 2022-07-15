@@ -1,5 +1,5 @@
 # recipe-webapp
-A project that I'm currently working on. I'm using React/TypeScript for the frontend and NodeJS for the backend. 
+A project that I'm currently working on using React/TypeScript for the frontend and NodeJS for the backend. 
 
 I utilized the Google Custom Search API to bring in millions of search results that are specifically only recipes. Using those results, I take the 1st page urls, send it to the NodeJS service, where it scrapes each site for only the important information (e.g ingredients, directions). As every site is unique, rather than hardcoding each website structure, I created several algorithms that generally work for all the websites. Using these methods, I'm able to extract the important data from around 99% of all the recipe sites. This all takes about 300ms to complete (although I hope to get it down much lower), where I then send all this data back to the React App in JSON format, where I fit it all into custom types. 
 
